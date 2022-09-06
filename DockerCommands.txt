@@ -1,0 +1,440 @@
+[root@ip-172-31-80-240 ~]# history
+
+25-10-2019
+
+    1  cd /etc/yum.repos.d/
+
+    2  ls
+
+    3  yum install epel-release
+
+    4  ls
+
+    5  yum install -y yum-utils device-mapper-persistent-data lvm2
+
+    6  ls
+
+    7  yum-config-manager --add-repo https://download.docker.com/linux/centos/do                                                                                        cker-ce.repo
+
+    8  ls
+
+    9  cd
+
+   10  yum install docker-ce docker-ce-cli containerd.io
+
+   11  systemctl status docker
+
+   12  systemctl start docker
+
+   13  systemctl enable docker
+
+   14  ls
+
+   15  systemctl status docker
+
+   16  docker
+
+   17  docker version
+
+   18  docker images
+
+   19  docker ps
+
+   20  docker ps -a
+
+   21  docker run hello-world
+
+   22  docker version
+
+   23  docker --version
+
+   24  docker version
+
+   25  docker info
+
+   26  cd /var/lib/docker
+
+   27  ls
+
+   28  cd image/
+
+   29  ls
+
+   30  cd overlay2/
+
+   31  ls
+
+   32  cat repositories.json q
+
+   33  cd
+
+   34  docker
+
+   35  docker images
+
+   36  docker images --help
+
+   37  docker images -a hello-world
+
+   38  docker images -d hello-world
+
+   39  docker images --digits hello-world
+
+   40  docker images --digests hello-world
+
+   41  docker ps
+
+   42  docker ps -a
+
+   43  docker ps
+
+   44  docker ps -a
+
+   45  docker ps --help
+
+   46  docker ps -n
+
+   47  docker ps -n 1
+
+   48  docker ps -n -q
+
+   49  docker ps  -q
+
+   50  docker ps -q
+
+   51  docker ps -aq
+
+   52  docker ps -aqs
+
+   53  docker ps -as
+
+   54  docker images
+
+   55  docker run hello-world
+
+   56  docker ps -a
+
+   57  docker run hello-world
+
+   58  docker ps -a
+
+   59  docker run hello-world
+
+   60  docker ps -a
+
+   61  docker run hello-world
+
+   62  docker ps -q
+
+   63  docker ps -aq
+
+   64  docker ps
+
+   65  docker run cenf9d1e3a73839
+
+   66  docker run centosd
+
+   67  docker run centos
+
+   68  dokcer ps
+
+   69  docker ps
+
+   70  docker ps -a -n 1
+
+   71  docker ps -a -n 2
+
+   72  docker run --help
+
+   73  docker run -itd centos
+
+   74  docker ps
+
+   75  docker ps -a
+
+   76  docker [s
+
+   77  docker ps
+
+   78  docker container --help
+
+   79  docker container stop c53d2d966133
+
+   80  docker ps
+
+   81  docker ps -a -n 1
+
+   82  docker container start c53d2d966133
+
+   83  docker ps
+
+   84  docker container kill c53d2d966133
+
+   85  docker ps
+
+   86  docker ps -a
+
+   87  docker container rm 0f709b5315c3 6f54e3c2adad 4999f9641c9e
+
+   88  docker ps -a
+
+   89  docker container prune
+
+   90  docker ps -a
+
+   91  docker info
+
+   92  docekr ps
+
+   93  docker ps
+
+   94  docker images
+
+   95  docker pull nginx
+
+   96  docker images
+
+   97  docker run -itd nginx
+
+   98  docker ps
+
+   99  docker run -itd -p 90:80 nginx
+
+  100  docker pull tomcat
+
+  101  docker run -itd -p 9090:8080 tomcat
+
+  102  docker ps
+
+  103  docker exec -it 965a132d0a61 bash
+
+  104  ls
+
+  105  vim index.html
+
+  106  vi index.html
+
+  107  docker run -itd -p 100:80 -v /root/index.html:/usr/share/nginx/html/index                                                                                        .html nginx
+
+  108  vi index.html
+
+  109  cat index.html
+
+  110  docker run -itd -p 110:80 -v "$(PWD)":/usr/share/nginx/html/index.html ng                                                                                        inx
+
+  111  docker container rm -f 77a2afd70e676f9
+
+  112  docker run -itd -p 110:80 -v "($PWD)":/usr/share/nginx/html/index.html ng                                                                                        inx
+
+  113  docker run -itd -p 110:80 -v $(PWD):/usr/share/nginx/html/index.html ngin                                                                                        x
+
+  114  echo $PWD
+
+  115  docker container rm -f 47b4c05162f8553d58a11b416bcf021fe75bdf40f79050a82b                                                                                        7e86a152ebd7d0
+
+  116  docker run -itd -p 110:80 -v $PWD:/usr/share/nginx/html/index.html nginx
+
+  117  docker container rm -f fb772973e43da
+
+  118  docker run -itd -p 110:80 -v "$PWD":/usr/share/nginx/html/index.html ngin                                                                                        x
+
+  119  docker container rm -f 67c1f
+
+  120  docker run -itd -p 110:80 -v "$PWD":/usr/share/nginx/html/ nginx
+
+  121  docker run -itd -p 80:80 -v "$PWD":/usr/share/nginx/html/ nginx
+
+  122  history
+
+  123  docker image
+
+  124  docker images
+
+  125  docker run hello-world
+
+  126  docker run centos
+
+  127  docker ps -n 1
+
+  128  docker run -it centos
+
+  129  docker ps
+
+  130  docker ps -a
+
+  131  docker run -itd centos
+
+  132  docker ps
+
+  133  docker run  centos sleep 120
+
+  134  16 seconds ago                       cocky_pascal
+
+  135  docker run -itd centos sleep 120
+
+  136  docker ps
+
+  137  docker exec -it 769a80e1dc56
+
+  138  docker exec -it 769a80e1dc56 bash
+
+  139  docker ps
+
+  140  docker run -itd centos sleep 120
+
+  141  docker ps
+
+  142  docker exec -it f1313db3b3b3 bash
+
+  143  docker ps
+
+  144  docker container prune
+
+  145  docker ps -a
+
+  146  docker ps
+
+  147  ip addr shoe
+
+  148  ip addr show
+
+  149  docker container inspect 1eea84edee2b
+
+  150  curl 172.17.0.3
+
+  151  ls
+
+  152  docker ps
+
+  153  docker exec -it 4f8b1718ffc4 bash
+
+  154  ls -ls /root/
+
+  155  ls -ls /
+
+  156  chmod 777 /
+
+  157  chmod 777 /root
+
+29-10-2019
+  
+
+  167  docker version
+
+  168  docker info
+
+  169  docker run --help
+
+  170  docker run -itd --restart Never nginx
+
+  171  docker run -itd --restart yes nginx
+
+  172  docker run -itd --restart never
+
+  173  docker run -itd --restart always nginx
+
+  174  docker ps
+
+  175  reboot
+
+  176  docker ps
+
+  177  docker run -itd -p 8080:8080 tomcat
+
+  178  wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+
+  179  yum install wget
+
+  180  wget https://tomcat.apache.org/tomcat-7.0-doc/appdev/sample/sample.war
+
+  181  ld
+
+  182  ls
+
+  183  docker cp
+
+  184  docker cp --help
+
+  185  docker ps
+
+  186  docker cp sample.war|- dc5f846f9e95:/usr/local/tomcat/webapps/
+
+  187  docker cp
+
+
+  188  docker cp sample.war dc5f846f9e95:/usr/local/tomcat/webapps/
+
+  189  docker commit
+
+  190  docker ps
+
+  191  docker commit dc5f846f9e95 tomcat:sample
+
+  192  docker images
+
+  193  docker run -itd -p 1000:8080 tomcat:sample
+
+  194  docker tag
+
+  195  docker images
+
+  196  docker tag tomcat:sample sforcloud/tomcat-sample
+
+  197  docker ps
+
+  198  docker images
+
+  199  docker login
+
+  200  docker push sforcloud/tomcat-sample
+
+  201  docker ps
+
+  202  docker kill 9718fa0df36a dc5f846f9e95
+
+  203  docker container prune
+
+  204  docker images
+
+  205  docker remove rmi tomcat sforcloud/tomcat-sample
+
+  206  docker rmi tomcat sforcloud/tomcat-sample
+
+  207  docker images
+
+  208  docker rmi tomcat:sample
+
+  209  docker images
+
+  210  docker run -itd -p 8080:8080 sforcloud/tomcat-sample
+
+  211  ls
+
+  212  vim Dockerfile
+
+  213  vi Dockerfile
+
+  214  docker build -t tomcat-file-build .
+
+  215  docker run -itd -p 9090:8080 tomcat-file-build:latest
+
+  216  history
+
+  217  docker rmi tomcat-file-build:latest
+
+  218  docker ps
+
+  219  docker rm -f abd32f8f1f0a
+
+  220  docker rmi tomcat-file-build:latest
+
+  221  vim Dockerfile
+
+  222  vi Dockerfile
+
+  223  docker build -t tomcat-file-build .
+
+  224  docker run -itd -p 9090:8080 tomcat-file-build:latest
+
+
+  

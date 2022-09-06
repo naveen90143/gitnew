@@ -1,0 +1,128 @@
+Version Controlling
+=======================
+This is the process of maintianing multiple versions of the code
+All the team members uplaod their code(check in) into the remote
+version controlling system.The VCS accepts the code uplaods from 
+multiple team members and integrates it so that when the other
+team members download the code they will be able to see the entire
+work done by the team
+
+VCS's also preserve older and later versions of the code so that
+at any time we can switch between which ever version we want
+
+VCS's also keep a track of who is making what kind of changes
+
+======================================================================
+
+VCS's are categorised into 2 types
+1 Centralised version controlling
+2 Distributed version controlling
+
+Centralised Version controlling
+-----------------------------------
+Here we have a remote server(code repository) into which all the team 
+members check in the code and all the features of version controlling
+are implemented in this remote server
+
+ Distributed version controlling
+-------------------------------------
+Here we have a local repository installed on every team members machines
+where version controlling happens at the level of individual team members
+form where it is uploaded into a remote server where version cotrolling 
+happens for the entire team
+
+====================================================================
+Setting up git on Windows
+-------------------------------
+1 Download git from
+  https://git-scm.com/downloads
+
+2 Install it
+
+3 Open gitbash and execute the git commands
+
+======================================================================
+Setting up git in ubuntu linux servers
+--------------------------------------------
+1 Update the apt repository
+  sudo apt-get update
+
+2 Install git
+  sudo apt-get install -y git
+
+----------------------------------------------------------------------
+Configuring user and email globally for all users on a system
+git config --global user.name "sai krishna"
+git config --global user.email "intelliqittrainings@gmail.com"
+
+-----------------------------------------------------------------------
+On the local machine git uses three sections
+1 Working directory
+2 Stagging Area
+3 Local repository
+
+Working directory is the location where all the code is created
+Initially all the files present here are called as untracked files
+
+Stagging area is the location where file indexing happens and it 
+is the buffer area of git and the files are called as indexed files
+
+Local repository is where version controlling happens and the files
+are called as commited files
+
+
+==========================================================================
+1 To initilise the working dir as a git repo
+  git init
+  This will create a hidden folder called .git where
+  it will store all configurations for git to work
+
+2 To send a file into from working dir to stagging area
+  git add filename
+  To send multiple files
+  git add file1 file2 file3
+  To send all files
+  git add .
+  . represents current working dir
+
+3 To bring files from stagging area to working dir
+  git rm --cached filename
+  (or)
+  git reset filename
+
+4 To send files from stagging area to local repository
+  git commit -m "Some msg"
+
+5 To check the status of working dir and stagging area files
+  git status
+
+6 To see the commits done on the local repository
+  git log
+  To see this output in simple one line format
+  git log --oneline
+
+==================================================================
+.gitignore
+================
+This is a special configuration file that is used to
+store private files info.Any file whose name is stored in
+.gitignore will not be accessed by git
+
+1 Create few file
+  touch file1 file2 file3 file4
+
+2 Check the git status
+  git status
+  It will show the above 4 files as untracked
+
+3 Create .gitignore and store the above 4 filenames in it
+  cat > .gitignore
+  file1
+  file2
+  file3
+  file4
+
+5 Check the status of git
+  It will no longer show file 1-4
+
+===============================================================================
